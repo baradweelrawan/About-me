@@ -6,7 +6,21 @@ header
 #logo {
     text-align: center;
 }
-#Font{
-    font-family: "Cursive";
+.Font{
+    background-color: rgb(3, 124, 139);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    color: rgb(10, 10, 10);
     
 }
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    color: rgb(7, 0, 0);
+  }
+h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: rgb(2, 29, 48);
+  }
