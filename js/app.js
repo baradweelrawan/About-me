@@ -46,6 +46,16 @@ switch (Question4)
         console.log('You can\'t guess');
             break;
 }
+let Question5=  prompt('Do you know any thing about my city ? (Yes,No)').toLowerCase;
+switch (Question5)
+{
+    case 'yes':
+        console.log('You can guess');
+            break;
+    case 'No':
+        console.log('You can\'t guess');
+            break;
+}
 
 
 
