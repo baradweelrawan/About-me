@@ -1,11 +1,11 @@
 'user strict'
 alert ('WELCOME IN About Me Website')
-let username=  prompt('Do You Want To Know More Pleas Enter ? (Yes,No)');
-console.log(username);
-if (username == Yes)
-{console.log(username);
+//let username=  prompt('Do You Want To Know More Pleas Enter ? (Yes,No)');
+//console.log(username);
+//if (username == Yes)
+//{console.log(username);
 
-}
+//}
 let Question1=  prompt('can you Guess How Many Years I SPend Studing At University ?  (Yes,No)');
 switch (Question1)
 {
@@ -17,8 +17,6 @@ switch (Question1)
             case 'No':
                 console.log('You can\'t guess');
             break;
-
-
 }
 
 
