@@ -1,5 +1,6 @@
 'user strict'
-alert ('WELCOME IN About Me Website')
+let username=  prompt('plaes Enter your name');
+alert ('WELCOME IN About Me Website' + username)
 //let username=  prompt('Do You Want To Know More Pleas Enter ? (Yes,No)');
 //console.log(username);
 //if (username == Yes)
