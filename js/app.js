@@ -27,7 +27,17 @@ switch (Question2)
             break;
 }
 let Question3=  prompt('can you Guess if there are a traffic jam in my city ?  (Yes,No)').toLowerCase;
-switch (Question2)
+switch (Question3)
+{
+    case 'yes':
+        console.log('You can guess');
+            break;
+    case 'No':
+        console.log('You can\'t guess');
+            break;
+}
+let Question4=  prompt('Dose the COVID 19 affects where i live ? (Yes,No)').toLowerCase;
+switch (Question4)
 {
     case 'yes':
         console.log('You can guess');
