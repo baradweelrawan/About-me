@@ -66,7 +66,7 @@ switch (Question5)
         console.log('You can\'t guess');
             break;
 }
-
+alert ('Thank You ' + username)
 
 
 
