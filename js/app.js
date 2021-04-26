@@ -16,7 +16,7 @@ switch (Question1)
         console.log('You can\'t guess');
             break;
 }
-let Question2=  prompt('can you Guess if i have a problem of going to my university').toLowerCase;
+let Question2=  prompt('can you Guess if i have a problem of going to my university ?  (Yes,No)').toLowerCase;
 switch (Question2)
 {
     case 'yes':
@@ -26,6 +26,17 @@ switch (Question2)
         console.log('You can\'t guess');
             break;
 }
+let Question3=  prompt('can you Guess if there are a traffic jam in my city ?  (Yes,No)').toLowerCase;
+switch (Question2)
+{
+    case 'yes':
+        console.log('You can guess');
+            break;
+    case 'No':
+        console.log('You can\'t guess');
+            break;
+}
+
 
 
 
