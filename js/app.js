@@ -67,6 +67,48 @@ switch (Question5)
             break;
 }
 alert ('Thank You ' + username)
+alert ('Pleas  guess a number just to make some fun')
+//let Question6=  prompt('Pleas  guess a number just to make some fun? '));
+let guessNumber=[30,31,32,35,60,69,62,65];
+let userGuessing= parseInt(prompt('what is your guessing number?'));
+let guessing = false;
+let GuessingOpportunities=0;
+for (let i = 0 ;i < guessNumber.length; i++)
+{
+    if ( userGuessing === guessNumber[i] )
+    {
+        console.log('you guessing it ')
+        guessing = true;
+        break;
+    }
+    else  {
+        for (let j = 1 ;GuessingOpportunities <= 4; i++)
+        {
+     
+        if ( 30< userGuessing < 40 || 60 < userGuessing < 70 )
+        {
+            alert (' your guessing is too high')
+        }
+    } else {
+        alert (' your guessing is too low')
+    }
+}
+}
+if (guessing === false)
+{
+    console.log('Sorry you didn\'t guessing it ')
+}
+//switch (guessNumber)
+//{
+ //   case 'yes':
+ //       console.log('You can guess');
+ //           break;
+  //  case 'No':
+//        console.log('You can\'t guess');
+//            break;
+//}
+
+
 
 
 
