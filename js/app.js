@@ -1,6 +1,6 @@
 'user strict'
-let username=  prompt('plaes Enter your name');
-alert ('WELCOME IN About Me Website' + username)
+let username=  prompt('please Enter your name');
+alert ('Welcome In About Me Website' + username)
 //let username=  prompt('Do You Want To Know More Pleas Enter ? (Yes,No)');
 //console.log(username);
 //if (username == Yes)
@@ -8,7 +8,7 @@ alert ('WELCOME IN About Me Website' + username)
 
 //}
 alert ('lets\'s answer question 1')
-let Question1=  prompt('can you Guess How Many Years I SPend Studing At University ?  (Yes,No)').toLowerCase;
+let Question1=  prompt('can you Guess How Many Years I Spend Studing At University ?  (Yes,No)').toLowerCase;
 switch (Question1)
 {
     case 'yes':
@@ -66,51 +66,101 @@ switch (Question5)
         console.log('You can\'t guess');
             break;
 }
-alert ('Thank You ' + username)
-alert ('Pleas  guess a number just to make some fun')
-//let Question6=  prompt('Pleas  guess a number just to make some fun? '));
-let guessNumber=[30,31,32,35,60,69,62,65];
+
+let guessNumber =155;
 let userGuessing= parseInt(prompt('what is your guessing number?'));
-let guessing = false;
-let GuessingOpportunities=0;
-for (let i = 0 ;i < guessNumber.length; i++)
+let gues = false;
+let GuesOpportunities =0;
+
+for (let i = 0 ; i <= GuesOpportunities  ; i++)
 {
-    if ( userGuessing === guessNumber[i] )
+  if ( userGuessing === guessNumber )
+  {
+      console.log('you guessing it ')
+      gues = true;
+     break;
+ // }
+} 
+if (gues === false)
+  { 
+     for (let GuesOpportunities = 0 ; GuesOpportunities <=4 ; GuesOpportunities++)
+     {
+          alert (' your guessing is wrong please try again ');
+          console.log('please try again  ')
+          let userGuessing= parseInt(prompt('what is your guessing number?'));
+          {
+            if (100 < userGuessing || 180 < userGuessing < 200  )
+            {
+                console.log('you guessing it too low ')
+                alert ('you guessing it too low')
+                let userGuessing= parseInt(prompt('what is your guessing number?'));
+            } else
+            {
+                console.log('you guessing it too high ')
+                alert ('you guessing it too high')
+            }
+            break;
+          }
+        //  break;
+      }
+    
+     console.log('The currect guessing are ' + guessNumber );
+     alert ('The currect guessing are ' + guessNumber) ;
+     
+ }
+
+ // else if (150 < userGuessing <155  )
+ // {
+//     console.log('you guessing it too low ')
+ //     alert ('you guessing it too low')
+      
+ // }
+//  else if (100 < userGuessing || 180 < userGuessing < 200  )
+//  {
+ //     console.log('you guessing it too high ')
+ //     alert ('you guessing it too high')
+     
+ // }
+//  break;
+//}
+if (userGuessing === false)
+{
+    console.log('The currect guessing is ' + guessNumber1 );
+    alert ('The currect guessing is' + + guessNumber1)
+}
+
+alert ('please  guess a number just to make some fun')
+//let Question7=  prompt('please  guess the answer to a question that could have many possibilities ');
+let NumbersArr=[30,31,32,35,60,69,62,65];
+let userGues= parseInt(prompt('what is your guessing number?'));
+let guess = false;
+//let attempts=6;
+for (let i = 0 ;i < NumbersArr.length; i++)
+{
+    if ( userGues === NumbersArr[i] )
     {
         console.log('you guessing it ')
-        guessing = true;
+        alert ('you guessing it')
+        guess = true;
         break;
+    }   
+
     }
-    else  {
-        for (let j = 1 ;GuessingOpportunities <= 4; i++)
+   
+if (guess === false)
+    { 
+        for (let attempts =1  ; attempts <= 6; attempts++)
         {
-     
-        if ( 30< userGuessing < 40 || 60 < userGuessing < 70 )
-        {
-            alert (' your guessing is too high')
+            alert (' your guessing is wrong please try again ');
+            console.log('please try again  ')
+            let userGues1= parseInt(prompt('what is your guessing number?'));
+            
         }
-    } else {
-        alert (' your guessing is too low')
+      
+       console.log('The currect guessing are ' + NumbersArr );
+       alert ('The currect guessing are ' + NumbersArr) ;
     }
+    console.log('Thank You ' + username ); 
+    alert ('Thank You ' + username) 
 }
-}
-if (guessing === false)
-{
-    console.log('Sorry you didn\'t guessing it ')
-}
-//switch (guessNumber)
-//{
- //   case 'yes':
- //       console.log('You can guess');
- //           break;
-  //  case 'No':
-//        console.log('You can\'t guess');
-//            break;
-//}
-
-
-
-
-
-
 
