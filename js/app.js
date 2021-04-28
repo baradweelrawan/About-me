@@ -8,6 +8,7 @@ alert ('Welcome In About Me Website' + username)
 
 //}
 alert ('lets\'s answer question 1')
+function ques1(){
 let Question1=  prompt('can you Guess How Many Years I Spend Studing At University ?  (Yes,No)').toLowerCase;
 switch (Question1)
 {
@@ -18,8 +19,9 @@ switch (Question1)
         console.log('You can\'t guess');
             break;
 }
+} ques1();
 alert ('lets\'s answer question 2')
-
+function ques2(){
 let Question2=  prompt('can you Guess if i have a problem of going to my university ?  (Yes,No)').toLowerCase;
 switch (Question2)
 {
@@ -30,7 +32,9 @@ switch (Question2)
         console.log('You can\'t guess');
             break;
 }
+}ques2();
 alert ('lets\'s answer question 3')
+function ques3(){
 
 let Question3=  prompt('can you Guess if there are a traffic jam in my city ?  (Yes,No)').toLowerCase;
 switch (Question3)
@@ -42,8 +46,9 @@ switch (Question3)
         console.log('You can\'t guess');
             break;
 }
+} ques3();
 alert ('lets\'s answer question 4')
-
+function ques4(){
 let Question4=  prompt('Dose the COVID 19 affects where i live ? (Yes,No)').toLowerCase;
 switch (Question4)
 {
@@ -54,8 +59,10 @@ switch (Question4)
         console.log('You can\'t guess');
             break;
 }
+} ques4();
 alert ('lets\'s answer question 5')
 
+function ques5(){
 let Question5=  prompt('Do you know any thing about my city ? (Yes,No)').toLowerCase;
 switch (Question5)
 {
@@ -66,7 +73,8 @@ switch (Question5)
         console.log('You can\'t guess');
             break;
 }
-
+} ques5();
+function ques6(){
 let guessNumber =155;
 let userGuessing= parseInt(prompt('what is your guessing number?'));
 let gues = false;
@@ -128,9 +136,10 @@ if (userGuessing === false)
     console.log('The currect guessing is ' + guessNumber1 );
     alert ('The currect guessing is' + + guessNumber1)
 }
-
+}ques6();
 alert ('please  guess a number just to make some fun')
 //let Question7=  prompt('please  guess the answer to a question that could have many possibilities ');
+function ques7(){
 let NumbersArr=[30,31,32,35,60,69,62,65];
 let userGues= parseInt(prompt('what is your guessing number?'));
 let guess = false;
@@ -160,6 +169,7 @@ if (guess === false)
        console.log('The currect guessing are ' + NumbersArr );
        alert ('The currect guessing are ' + NumbersArr) ;
     }
+}ques7();
     console.log('Thank You ' + username ); 
     alert ('Thank You ' + username) 
 }
